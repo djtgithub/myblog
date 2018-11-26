@@ -5,7 +5,6 @@
     <div class="container_wrap">
     	<router-view />
     </div>
-    <div>haha</div>
     
   </div>
 </template>
