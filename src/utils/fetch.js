@@ -9,6 +9,7 @@ Vue.prototype.$Message = Message
 
 const service = axios.create({
 	baseURL:'https://d.apicloud.com/mcm/api/',
+          // "https://d.apicloud.com/mcm/api/photo/count?filter=%7B%22where%22%3A%7B%7D%7D",
 	time:5000
 });
 
@@ -52,7 +53,7 @@ service.interceptors.response.use(
 
 
 
-console.log(JSON.stringify(response))
+// console.log(JSON.stringify(response))
      return response;
 
   },

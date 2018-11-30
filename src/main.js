@@ -10,6 +10,9 @@ import store from './store'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 
+import '../static/layui/layui.js'
+import '../static/layui/css/layui.css'
+
 import iView from 'iview'; // 导入组件库
 import 'iview/dist/styles/iview.css'; // 导入样式
 
@@ -31,6 +34,12 @@ Vue.use(iView)
 Vue.config.productionTip = false
 
 Vue.prototype.Bus = new Vue();
+
+
+import fetch from './utils/fetch.js'
+Vue.prototype.fetch = fetch;
+
+
 
 /* eslint-disable no-new */
 const app = new Vue({

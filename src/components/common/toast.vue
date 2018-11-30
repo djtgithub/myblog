@@ -27,7 +27,7 @@ export default {
           this.Cookies.set('Aadmin-Token','');
           this.$store.commit('SET_LOGIN',false);
           this.Cookies.set('Login',false);
-          this.$router.push({name:'Login'});
+          this.$router.push({path:'/login'});
            this.$store.commit('SET_TOAST',false);
          this.Cookies.set('Toast', false);
       },
@@ -78,7 +78,7 @@ var that=this;
 
 .weui_dialog {
   position: fixed;
-  z-index: 4;
+  z-index: 902;
   width: 85%;
   top: 50%;
   left: 50%;
@@ -624,7 +624,7 @@ var that=this;
 .weui_mask_transition,
 .weui_mask_transparent {
   position: fixed;
-  z-index: 4;
+  z-index: 901;
   width: 100%;
   height: 100%;
   top: 0;

@@ -67,7 +67,7 @@
 				 	that.$store.commit('SET_LOGIN',true);
              		that.Cookies.set('Login',true);
 
-				 	that.$router.push({name:'Page1'});
+				 	that.$router.push({path:'/page1'});
 				 }else{
 				 	that.$Message.info((res.response.data).error.message);
 
@@ -82,10 +82,11 @@
 </script>
 
 <style scoped>
-	.col{
+	.login .col{
 		padding: 20px 0;
+		float: inherit !important;
 	}
-	.col span{
+	.login .col span{
 		display: inline-block;
 		width: 50px;
 	}
@@ -99,7 +100,7 @@
 		left: 50%;
 		transform: translate(-50%, -50%)
 	}
-	.ivu-btn{
+	.login .ivu-btn{
 		margin-top: 20px;
 	}
 

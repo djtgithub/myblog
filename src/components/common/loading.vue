@@ -1,7 +1,7 @@
 <template>
     <Spin fix>
-        <Icon type="ios-loading" size=18 class="demo-spin-icon-load"></Icon>
-        <div>Loading</div>
+        <Icon type="ios-loading" size=38 class="demo-spin-icon-load"></Icon>
+        <div class="txt">加载中</div>
     </Spin>
 </template>
 
@@ -33,9 +33,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 8;
+    z-index: 999999999;
     width: 100%;
     height: 100%;
     background:rgba(0, 0, 0, .5);
+}
+
+.txt{
+    font-size: 28px;
+    color: #fff;
 }
 </style>
